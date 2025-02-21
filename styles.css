@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: space-around;
     color: #F8F8F0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .book-section {
@@ -86,7 +88,8 @@ h1 {
 
 .form-container {
     width: 60%;
-    height: 80%;
+    height: 90%;
+    min-width: 400px;
     background-color: rgba(66, 67, 66, 0.6);
     margin-top: 200px;
     padding: 3em;
@@ -98,18 +101,29 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
-input {
-    background-color: #F8F8F0;
-    color: #2E2B1F;
-    font-weight: 600;
-    padding: 3px;
-    border-radius: 1em;
-    width: 70%;
-}
-
-label {
+form label {
     font-size: 1em;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+form input[type="radio"] {
+    margin-left: 10px; 
+}
+
+
+form div {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+
+fieldset {
+    display: block;
+    padding: 6px;
 }
