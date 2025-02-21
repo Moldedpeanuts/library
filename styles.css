@@ -71,3 +71,21 @@ h1 {
     padding: 0.8em;
     margin-bottom: -60px;
 }
+
+.book-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    width: 50%;
+    height: 50%;
+}
+
+.form-container {
+    width: 60%;
+    height: 60%;
+    background-color: rgba(66, 67, 66, 0.3);
+}
+
