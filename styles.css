@@ -7,6 +7,7 @@
 body {
     display: flex;
     justify-content: space-around;
+    color: #F8F8F0;
 }
 
 .book-section {
@@ -14,7 +15,6 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    color: white;
     display: flex;
 }
 
@@ -29,7 +29,7 @@ footer {
 }
 
 footer a:visited {
-    color: white;
+    color: #F8F8F0;
 }
 
 .title-section {
@@ -38,10 +38,27 @@ footer a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #2C1A11;
 }
 
 .button-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.button-container button {
+    width: 150px;
+    height: 40px;
+    background-color: #2E2B1F;
+    color: #F8F8F0;
+    border: 2px solid #5A4E3E;
+    border-radius: 1.5em;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.button-container button:hover {
+    background: #5A4E3E;
 }
