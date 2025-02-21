@@ -1,17 +1,16 @@
 const myLibrary = [];
 
-function Book() {
+function Book(author, title, pages, date, isRead) {
     this.author = author;
     this.title = title;
     this.pages = pages;
     this.date = date;
-    this.isRead = function () {
-        // 
-    };
+    this.isRead = isRead;
 }
 
 function addBookToLibrary(author, title, pages, date, isRead) {
-    const book = new Book(author, title, pages, isRead);
+    const book = new Book(author, title, pages, date,  isRead);
+    myLibrary.push(book);
 }
 
 
@@ -51,3 +50,10 @@ newBookBtn.addEventListener('click', () => {
     </div>
     `
 });
+
+
+// Archive
+const archiveBtn = document.querySelector('.archive');
+archiveBtn.addEventListener('click', () => [
+    //
+]);
