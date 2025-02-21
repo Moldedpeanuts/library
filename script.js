@@ -1,4 +1,5 @@
 const myLibrary = [];
+const contentDiv = document.querySelector('.content');
 
 function Book(author, title, pages, date, isRead) {
     this.author = author;
@@ -21,16 +22,28 @@ const testBook2 = new Book('Blood Meridian', 'Unknown', '434343', '12/2/1878', t
 addBookToLibrary(testBook2.author, testBook2.title, testBook2.pages, testBook2.date, testBook2.isRead);
 
 // Loops Library
-
+function displayBooks() {
+    myLibrary.forEach((book, index) => {
+        const bookCard = document.createElement('div');
+        bookCard.classList.add('book-card');
+        bookCard.innerHTML = `
+            <h3>${book.title}</h3>
+            <p>Author: ${book.author}</p>
+            <p>Pages: ${book.pages}</p>
+            <p>Published: ${book.date}</p>
+            <p>Read: ${book.isRead ? 'Yes' : 'No'}</p>
+        `
+        contentDiv.appendChild(bookCard);
+    });
+}
 
 // Button add book form
-const contentDiv = document.querySelector('.content');
 const newBookBtn = document.querySelector('.add');
 
 newBookBtn.addEventListener('click', () => {
     contentDiv.innerHTML = `
     <div class="form-container">
-        <form action method="POST">
+        <form class="book-form" action method="POST">
             <label for="title">Title</label>
             <input type="text" name="title" id="title" required>
 
@@ -58,11 +71,17 @@ newBookBtn.addEventListener('click', () => {
         </form>
     </div>
     `
+
+    // Prevent default behavior of form
+
+    const form = document.querySelector('.book-form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+    });
+
+    const submitBtn = document.querySelector('.submit-button');
+    submitBtn.addEventListener('click', () => {
+        contentDiv.innerHTML = ``;
+        displayBooks();
+    }); 
 });
-
-
-// Archive
-const archiveBtn = document.querySelector('.archive');
-archiveBtn.addEventListener('click', () => [
-    //
-]);
