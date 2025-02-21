@@ -127,3 +127,19 @@ fieldset {
     display: block;
     padding: 6px;
 }
+
+form input {
+    border-radius: 1em;
+    padding: 3px;
+}
+
+.submit-button {
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 1.4em;
+   background-color: #FF6F00;
+   color: #F8F8F0;
+   font-weight: 700;
+   font-size: 0.8em;
+   transition: background-color 0.3s ease;
+}
