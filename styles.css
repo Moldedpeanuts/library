@@ -80,9 +80,8 @@ h1 {
 }
 
 .content {
-    
     width: 50%;
-    height: 50%;
+    height: 70%;
 }
 
 .form-container {
@@ -91,5 +90,7 @@ h1 {
     background-color: rgba(66, 67, 66, 0.6);
     margin-top: 250px;
     padding: 3em;
+    border-radius: 1em;
+    font-size: 1.3em;
 }
 
