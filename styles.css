@@ -88,7 +88,8 @@ h1 {
 .form-container {
     width: 60%;
     height: 60%;
-    background-color: rgba(66, 67, 66, 0.3);
+    background-color: rgba(66, 67, 66, 0.6);
     margin-top: 250px;
+    padding: 3em;
 }
 
