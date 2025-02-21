@@ -21,7 +21,7 @@ const newBookBtn = document.querySelector('.add');
 newBookBtn.addEventListener('click', () => {
     contentDiv.innerHTML = `
     <div class="form-container">
-        <form>
+        <form method="POST">
             <label for="title">Title</label>
             <input type="text" name="title" id="title" required>
             <label for="author">Author</label>
