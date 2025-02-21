@@ -19,11 +19,13 @@ body {
 }
 
 footer {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(66, 67, 66, 0.7);
     align-self: flex-end;
     padding: 20px;
     display: flex;
+    justify-content: center;
     gap: 50px;
+    width: 100%;
 }
 
 footer a:visited {
