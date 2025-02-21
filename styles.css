@@ -31,3 +31,17 @@ footer {
 footer a:visited {
     color: white;
 }
+
+.title-section {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
