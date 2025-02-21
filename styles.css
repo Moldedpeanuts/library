@@ -86,9 +86,9 @@ h1 {
 
 .form-container {
     width: 60%;
-    height: 70%;
+    height: 80%;
     background-color: rgba(66, 67, 66, 0.6);
-    margin-top: 250px;
+    margin-top: 200px;
     padding: 3em;
     border-radius: 1em;
     font-size: 1.3em;
@@ -106,4 +106,10 @@ input {
     color: #2E2B1F;
     font-weight: 600;
     padding: 3px;
+    border-radius: 1em;
+    width: 70%;
+}
+
+label {
+    font-size: 1em;
 }
