@@ -4,12 +4,13 @@ function Book() {
     this.author = author;
     this.title = title;
     this.pages = pages;
+    this.date = date;
     this.isRead = function () {
-        // will add later
+        // 
     };
 }
 
-function addBookToLibrary(author, title, pages, isRead) {
+function addBookToLibrary(author, title, pages, date, isRead) {
     const book = new Book(author, title, pages, isRead);
 }
 
