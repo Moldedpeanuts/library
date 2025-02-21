@@ -86,7 +86,7 @@ h1 {
 
 .form-container {
     width: 60%;
-    height: 60%;
+    height: 70%;
     background-color: rgba(66, 67, 66, 0.6);
     margin-top: 250px;
     padding: 3em;
@@ -94,3 +94,16 @@ h1 {
     font-size: 1.3em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+input {
+    background-color: #F8F8F0;
+    color: #2E2B1F;
+    font-weight: 600;
+    padding: 3px;
+}
