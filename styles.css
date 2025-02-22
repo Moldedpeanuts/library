@@ -161,6 +161,7 @@ form input {
     box-shadow: 5px 6px #F8F8F0;
     padding: 10px;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 .book-card:hover {
@@ -178,4 +179,5 @@ form input {
     font-weight: 700;
     font-size: 1em;
     margin-top: 1rem;
+    cursor: pointer;
 }
