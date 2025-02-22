@@ -161,3 +161,8 @@ form input {
     box-shadow: 7px 7px #F8F8F0;; 
 }
 
+.book-card:hover {
+    transform: translateY(-6px);
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
