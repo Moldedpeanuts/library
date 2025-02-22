@@ -10,16 +10,14 @@ function Book(author, title, pages, date, isRead) {
 }
 
 function addBookToLibrary(book) {
-    const book = new Book();
     myLibrary.push(book);
 }
 
-// Add test Books
 const testBook1 = new Book('JK Rowling', 'Harry Potter', '55432', '12/20/1994', false);
-addBookToLibrary(testBook1.author, testBook1.title, testBook1.pages,testBook1.date,  testBook1.isRead);
+addBookToLibrary(testBook1);
 
-const testBook2 = new Book('Blood Meridian', 'Unknown', '434343', '12/2/1878', true);
-addBookToLibrary(testBook2.author, testBook2.title, testBook2.pages, testBook2.date, testBook2.isRead);
+const testBook2 = new Book('Unknown', 'Blood Meridian', '434343', '12/2/1878', true);
+addBookToLibrary(testBook2);
 
 // Loops Library
 function displayBooks() {
@@ -72,8 +70,7 @@ newBookBtn.addEventListener('click', () => {
     </div>
     `
 
-    // Prevent default behavior of form
-
+    // Prevent default behavior of form 
     const form = document.querySelector('.book-form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -81,7 +78,6 @@ newBookBtn.addEventListener('click', () => {
 
     const submitBtn = document.querySelector('.submit-button');
     submitBtn.addEventListener('click', () => {
-        contentDiv.innerHTML = ``;
         displayBooks();
     }); 
 });
