@@ -86,7 +86,20 @@ newBookBtn.addEventListener('click', () => {
 
 // Event Delegation for parent
 contentDiv.addEventListener('click', (e) => {
+    if(e.target.classList.contains('remove-book')) {
         const index = e.target.dataset.index;
         myLibrary.splice(index, 1);
         displayBooks();
+    }
+    if(e.target.classList.contains('read')) {
+        if(e.target.textContent == 'Read: Yes') {
+            e.target.textContent = 'Read: Not Yet';
+        } else {
+            e.target.textContent = 'Read: Yes';
+        }
+    }
 });
+
+Book.prototype.toggleReadStatus = function (element) {
+    element.classList.toggle('read');
+}
