@@ -83,7 +83,11 @@ h1 {
 
 .content {
     width: 50%;
-    height: 70%;
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: space-around;
 }
 
 .form-container {
@@ -143,3 +147,4 @@ form input {
    font-size: 0.8em;
    transition: background-color 0.3s ease;
 }
+
