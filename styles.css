@@ -86,8 +86,7 @@ h1 {
     height: 80%;
     display: flex;
     flex-flow: row wrap;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 2rem;
 }
 
 .form-container {
