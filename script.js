@@ -35,7 +35,7 @@ function displayBooks() {
         contentDiv.appendChild(bookCard);
     });
 }
-
+displayBooks();
 // Button add book form
 const newBookBtn = document.querySelector('.add');
 
@@ -79,6 +79,6 @@ newBookBtn.addEventListener('click', () => {
 
     const submitBtn = document.querySelector('.submit-button');
     submitBtn.addEventListener('click', () => {
-        displayBooks();
+        // myLibrary.push();
     }); 
 });
