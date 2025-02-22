@@ -154,8 +154,9 @@ form input {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: rgba(66, 67, 66, 0.6);
-    width: 40%;
-    height: 40%;
+    background-color: rgba(66, 67, 66, 0.9);
+    width: 20%;
+    height: 30%;
     border-radius: 1.5em;
 }
+
