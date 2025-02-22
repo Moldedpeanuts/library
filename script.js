@@ -13,13 +13,6 @@ function addBookToLibrary(book) {
     myLibrary.push(book);
 }
 
-const testBook1 = new Book('Harry Potter', 'JK Rowling',  '55432', '12/20/1994', false);
-addBookToLibrary(testBook1);
-
-const testBook2 = new Book('Blood Meridian', 'Unknown', '434343', '12/2/1878', true);
-addBookToLibrary(testBook2);
-
-
 // Loops Library
 function displayBooks() {
     myLibrary.forEach((book, index) => {
