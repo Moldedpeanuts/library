@@ -100,6 +100,3 @@ contentDiv.addEventListener('click', (e) => {
     }
 });
 
-Book.prototype.toggleReadStatus = function (element) {
-    element.classList.toggle('read');
-}
