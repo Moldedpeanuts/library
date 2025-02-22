@@ -15,6 +15,7 @@ function addBookToLibrary(book) {
 
 // Loops Library
 function displayBooks() {
+    contentDiv.textContent = '';
     myLibrary.forEach((book, index) => {
         const bookCard = document.createElement('div');
         bookCard.classList.add('book-card');
@@ -28,7 +29,8 @@ function displayBooks() {
         contentDiv.appendChild(bookCard);
     });
 }
-displayBooks();
+
+
 // Button add book form
 const newBookBtn = document.querySelector('.add');
 
@@ -63,15 +65,20 @@ newBookBtn.addEventListener('click', () => {
         </form>
     </div>
     `
-
     // Prevent default behavior of form 
     const form = document.querySelector('.book-form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-    });
 
-    const submitBtn = document.querySelector('.submit-button');
-    submitBtn.addEventListener('click', () => {
-        // myLibrary.push();
-    }); 
+        const title = form.elements['title'].value;
+        const author = form.elements['author'].value;
+        const pages = form.elements['pages'].value;
+        const date = form.elements['date'].value;
+        const isRead = form.elements['read_book'].value ==='true';
+
+        const newBook = new Book(title, author, pages, date, isRead);
+        addBookToLibrary(newBook);
+        displayBooks();
+        form.reset();
+    });
 });
