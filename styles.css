@@ -158,11 +158,24 @@ form input {
     width: 20%;
     height: 30%;
     border-radius: 1.5em;
-    box-shadow: 7px 7px #F8F8F0;; 
+    box-shadow: 5px 6px #F8F8F0;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .book-card:hover {
     transform: translateY(-6px);
     transition: transform 0.4s ease;
     cursor: pointer;
+}
+
+.read {
+    background-color: darkblue;
+    border-radius: 1.5em;
+    padding: 0.7em;
+    box-shadow: 2px 2px #F8F8F0;
+    color: #F8F8F0;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 1rem;
 }
