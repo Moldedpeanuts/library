@@ -9,8 +9,8 @@ function Book(author, title, pages, date, isRead) {
     this.isRead = isRead;
 }
 
-function addBookToLibrary(author, title, pages, date, isRead) {
-    const book = new Book(author, title, pages, date,  isRead);
+function addBookToLibrary(book) {
+    const book = new Book();
     myLibrary.push(book);
 }
 
