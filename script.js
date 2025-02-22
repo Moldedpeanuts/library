@@ -25,6 +25,7 @@ function displayBooks() {
             <p>Pages: ${book.pages}</p>
             <p>Published: ${book.date}</p>
             <button type="button" class="read">Read: ${book.isRead ? 'Yes' : 'Not yet'}</button>
+            <button type="button" class="remove-book">Delete</button>
         `
         contentDiv.appendChild(bookCard);
     });
