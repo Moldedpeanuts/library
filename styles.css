@@ -174,7 +174,6 @@ form input {
     background-color: darkblue;
     border-radius: 1.5em;
     padding: 0.7em;
-    box-shadow: 2px 2px #F8F8F0;
     color: #F8F8F0;
     font-weight: 700;
     font-size: 1em;
@@ -184,8 +183,7 @@ form input {
 .remove-book {
     background-color: red;
     border-radius: 1.5em;
-    padding: 0.7em;
-    box-shadow: 2px 2px #F8F8F0;
+    padding: 0.4em;
     color: #F8F8F0;
     font-weight: 700;
     font-size: 1em;

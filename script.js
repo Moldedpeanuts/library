@@ -25,7 +25,7 @@ function displayBooks() {
             <p>Pages: ${book.pages}</p>
             <p>Published: ${book.date}</p>
             <button type="button" class="read">Read: ${book.isRead ? 'Yes' : 'Not yet'}</button>
-            <button type="button" class="remove-book">Delete</button>
+            <button type="button" class="remove-book" data-index="${index}">Delete</button>
         `
         contentDiv.appendChild(bookCard);
     });
@@ -82,4 +82,11 @@ newBookBtn.addEventListener('click', () => {
         displayBooks();
         form.reset();
     });
+});
+
+// Event Delegation for parent
+contentDiv.addEventListener('click', (e) => {
+        const index = e.target.dataset.index;
+        myLibrary.splice(index, 1);
+        displayBooks();
 });
