@@ -30,7 +30,7 @@ function displayBooks() {
             <p>Author: ${book.author}</p>
             <p>Pages: ${book.pages}</p>
             <p>Published: ${book.date}</p>
-            <p class="read">Read: ${book.isRead ? 'Yes' : 'No'}</p>
+            <button type="button" class="read">Read: ${book.isRead ? 'Yes' : 'No'}</button>
         `
         contentDiv.appendChild(bookCard);
     });
