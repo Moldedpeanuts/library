@@ -49,3 +49,15 @@ This project focuses on separating the logic for data storage and DOM manipulati
 5. You can add, remove and toggle books freely to manage your online library.
 
 
+## Getting Started
+
+To get a copy of the project running on your local machine:
+
+### Prerequisites
+
+- A modern web browser.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/moldedpeanuts/book-library.git
