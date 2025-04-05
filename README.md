@@ -61,3 +61,14 @@ To get a copy of the project running on your local machine:
 
 ```bash
 git clone https://github.com/moldedpeanuts/book-library.git
+```
+
+## Future Improvements
+
+- **Data Persistence with Local Storage** : Implement localStorage to save books between page reloads.
+- **Backend Integration** : Set up a backend to store book data persistently, allowing users to have their own account and access their book library from multiple devices.
+- **Book Details Page**: Add a detailed view page for each book with a description, reviews and a rating system.
+- **Mobile Responsiveness**: Improve the UI for better mobile usability.
+- **User Authentication** : Allow users to create accounts and save their library data securely.
+
+
