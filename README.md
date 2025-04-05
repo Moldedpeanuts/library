@@ -72,3 +72,7 @@ git clone https://github.com/moldedpeanuts/book-library.git
 - **User Authentication** : Allow users to create accounts and save their library data securely.
 
 
+## Acknowledgements
+
+- This project was created as part of The Odin Project's Full Stack JavaScript curriculum.
+- Inspired by real-world applications that manage user-generated data and interactions, this project simulates a functional and maintainable library system.
