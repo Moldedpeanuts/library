@@ -1,5 +1,5 @@
-# library
-A browser library project accumulating many books. You can store them inside the library, find their page count and whether you have read them or not
+# Book Library
+This project is designed to demonstrate HTML, CSS and vanilla JavaScript skills with a practical application - a dynamic book library. The project utilizes the concept of OOP in JavaScript to manage book data, allowing for interactivity and efficient management of a list of books.
 
 
 ## Thought process
